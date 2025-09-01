@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人空间 | 前端学习</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">我的空间</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home">首页</a></li>
+                <li class="nav-item"><a href="#about">关于我</a></li>
+                <li class="nav-item"><a href="#skills">技能</a></li>
+                <li class="nav-item"><a href="#contact">联系我</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button id="theme-toggle" class="theme-btn">暗黑模式</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 首页自我介绍区域 -->
+        <section id="home" class="hero">
+            <h1>你好，我是 <span class="highlight">——</span></h1>
+            <p>一名自学前端开发菜鸟</p>
+            <button onclick="location.href='#contact'">联系我</button>
+        </section>
+
+        <!-- 关于我 section -->
+        <section id="about">
+            <h2>关于我</h2>
+            <p>我是XX大学的一名学生，目前正在自学前端开发。对React/Vue很感兴趣，希望未来能成为一名优秀的前端工程师。</p>
+        </section>
+
+        <!-- 技能 section -->
+        <section id="skills">
+            <h2>我的技能</h2>
+            <div class="skills-container">
+                <div class="skill-item">HTML5</div>
+                <div class="skill-item">CSS3</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Git</div>
+            </div>
+        </section>
+
+        <!-- 联系我 section -->
+        <section id="contact">
+            <h2>联系我</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="你的名字" required>
+                <input type="email" placeholder="你的邮箱" required>
+                <textarea placeholder="你想对我说的话..." rows="5" required></textarea>
+                <button type="submit">发送消息</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 [你的名字]. 使用 HTML/CSS/JS 构建</p>
+    </footer>
+
+    <!-- 在最后引入JS -->
+    <script src="script.js"></script>
+</body>
+</html>
