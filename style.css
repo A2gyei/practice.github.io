@@ -1,24 +1,33 @@
 /* 1. 定义颜色变量，用于实现暗黑模式 */
 :root {
-    --bg-color: #f4f4f4;
-    --text-color: #333;
-    --primary-color: #007bff;
-    --nav-bg-color: #fff;
-    --border-color: #ddd;
+  /* 明亮模式配色 */
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --primary-color: #4361ee; /*现代蓝*/
+  --secondary-color: #7209b7; /* 辅助色-紫色 */
+  --accent-color: #f72585; /* 强调色-粉色 */
+  --nav-bg-color: #fff;
+  --border-color: #dee2e6;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* 暗黑模式的主题变量 */
 [data-theme="dark"] {
-    --bg-color: #1a1a1a;
-    --text-color: #f4f4f4;
-    --primary-color: #4da6ff;
-    --nav-bg-color: #222;
-    --border-color: #444;
+    --bg-color: #121212;
+  --text-color: #e9ecef;
+  --primary-color: #4895ef;
+  --secondary-color: #b5179e;
+  --accent-color: #f72585;
+  --nav-bg-color: #1e1e1e;
+  --border-color: #343a40;
+  --card-bg: #1e1e1e;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 /* 2. 基础样式 */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
@@ -160,4 +169,5 @@ button {
     .nav-menu.active {
         left: 0;
     }
+
 }
